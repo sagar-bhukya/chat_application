@@ -1,0 +1,16 @@
+```
+channels:
+
+-Usaully django uses HTTP protocol for communication between client and server
+-channels do not use HTTP, they use a protocol like websocket
+----building a chat application , you could have multiple clients connected to a server. ex: lets say you want to create a chat application for 50 people, so they are going to be 50 clients and there needs to be single server.here we not use http, so these clients have to communicate with each other using single server.
+
+-websockets allow bi-directional communication btw server and client, server can push data to client without waiting for client request.
+
+-with websockets, a server could communicate with multiple clients at once.
+
+-channels use django's native async view support, allows us to run http and websockets.
+
+-Also provides integration with django's authentication system.
+
+```

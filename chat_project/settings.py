@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'chat_app',
+    'channels',
 ]
 
 MIDDLEWARE = [
@@ -68,6 +70,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'chat_project.wsgi.application'
+ASGI_APPLICATION = 'chat_project.asgi.application'
 
 
 # Database
